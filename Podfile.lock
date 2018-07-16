@@ -1,0 +1,23 @@
+PODS:
+  - MBProgressHUD (1.0.0)
+  - YKSDK (1.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.0.0)
+  - YKSDK (from `./`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  YKSDK:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  YKSDK: b83cc7526bb7490076198eadd9cbeb541fb77c0a
+
+PODFILE CHECKSUM: 8b8f14215a0c0d59eff64d336f9a40b0b582dea9
+
+COCOAPODS: 1.5.3

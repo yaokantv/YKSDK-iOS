@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15DEC977D9EBCD73ABA3CBE7 /* Pods_YKSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CA84139D7540B1C6B70569 /* Pods_YKSDKDemo.framework */; };
+		3F1382FE1F5577BB00D5FD0A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F1383001F5577BB00D5FD0A /* Localizable.strings */; };
+		3F5A21AD1E27666F006BF365 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A21AC1E27666F006BF365 /* main.m */; };
+		3F5A21B01E27666F006BF365 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A21AF1E27666F006BF365 /* AppDelegate.m */; };
+		3F5A21B61E27666F006BF365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A21B41E27666F006BF365 /* Main.storyboard */; };
+		3F5A21B81E27666F006BF365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A21B71E27666F006BF365 /* Assets.xcassets */; };
+		3F5A21BB1E27666F006BF365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A21B91E27666F006BF365 /* LaunchScreen.storyboard */; };
+		3F5A21F61E277483006BF365 /* YKDeviceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A21F41E277483006BF365 /* YKDeviceListCell.m */; };
+		3F5A21F71E277483006BF365 /* YKDeviceListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A21F51E277483006BF365 /* YKDeviceListCell.xib */; };
+		3FA2D81C1E2DEA7500551F8F /* Remote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA2D81B1E2DEA7500551F8F /* Remote.storyboard */; };
+		3FA2D81F1E2DF96D00551F8F /* YKDeviceTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D81E1E2DF96D00551F8F /* YKDeviceTypeViewController.m */; };
+		3FA2D8261E2E0DE900551F8F /* YKBrandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D8251E2E0DE900551F8F /* YKBrandTableViewController.m */; };
+		3FA2D8301E2E184100551F8F /* YKMatchDeviceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D82F1E2E184100551F8F /* YKMatchDeviceTableViewController.m */; };
+		3FA2D8331E2E186400551F8F /* YKMatchKeyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D8321E2E186400551F8F /* YKMatchKeyTableViewController.m */; };
+		3FA2D8801E2F71AD00551F8F /* YKRemoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D87F1E2F71AD00551F8F /* YKRemoteTableViewController.m */; };
+		3FA2D8831E305BEE00551F8F /* YKRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D8821E305BEE00551F8F /* YKRemoteViewController.m */; };
+		3FEC71061F0357D10018F46C /* YKRemoteACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC71051F0357D10018F46C /* YKRemoteACViewController.m */; };
+		F6E1701320F8A4DD0052B218 /* YKCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E1701220F8A4DD0052B218 /* YKCommon.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		121B6EA2639C9907077006A2 /* Pods-YKSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YKSDKDemo/Pods-YKSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		14EE1DA3AE4F1B5ABB9A8CAA /* Pods_YKCenterDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKCenterDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		351D579B1E534A037D02F0B0 /* Pods-YKSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YKSDKDemo/Pods-YKSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		355C6262D1154727EB7321AF /* Pods-YKCenterSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKCenterSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-YKCenterSwift/Pods-YKCenterSwift.release.xcconfig"; sourceTree = "<group>"; };
+		3F1382F41F55775F00D5FD0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3F1382F51F55776000D5FD0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3F1382F81F55776500D5FD0A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3F1382F91F55776500D5FD0A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3F1382FF1F5577BB00D5FD0A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3F1383011F5577F000D5FD0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3F5A21A81E27666F006BF365 /* YKSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5A21AC1E27666F006BF365 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F5A21AE1E27666F006BF365 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F5A21AF1E27666F006BF365 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F5A21B51E27666F006BF365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F5A21B71E27666F006BF365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F5A21BA1E27666F006BF365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F5A21BC1E27666F006BF365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5A21F31E277483006BF365 /* YKDeviceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKDeviceListCell.h; sourceTree = "<group>"; };
+		3F5A21F41E277483006BF365 /* YKDeviceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKDeviceListCell.m; sourceTree = "<group>"; };
+		3F5A21F51E277483006BF365 /* YKDeviceListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YKDeviceListCell.xib; sourceTree = "<group>"; };
+		3FA2D81B1E2DEA7500551F8F /* Remote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Remote.storyboard; sourceTree = "<group>"; };
+		3FA2D81D1E2DF96D00551F8F /* YKDeviceTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKDeviceTypeViewController.h; sourceTree = "<group>"; };
+		3FA2D81E1E2DF96D00551F8F /* YKDeviceTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKDeviceTypeViewController.m; sourceTree = "<group>"; };
+		3FA2D8241E2E0DE900551F8F /* YKBrandTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKBrandTableViewController.h; sourceTree = "<group>"; };
+		3FA2D8251E2E0DE900551F8F /* YKBrandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKBrandTableViewController.m; sourceTree = "<group>"; };
+		3FA2D82E1E2E184100551F8F /* YKMatchDeviceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKMatchDeviceTableViewController.h; sourceTree = "<group>"; };
+		3FA2D82F1E2E184100551F8F /* YKMatchDeviceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKMatchDeviceTableViewController.m; sourceTree = "<group>"; };
+		3FA2D8311E2E186400551F8F /* YKMatchKeyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKMatchKeyTableViewController.h; sourceTree = "<group>"; };
+		3FA2D8321E2E186400551F8F /* YKMatchKeyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKMatchKeyTableViewController.m; sourceTree = "<group>"; };
+		3FA2D87E1E2F71AD00551F8F /* YKRemoteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKRemoteTableViewController.h; sourceTree = "<group>"; };
+		3FA2D87F1E2F71AD00551F8F /* YKRemoteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKRemoteTableViewController.m; sourceTree = "<group>"; };
+		3FA2D8811E305BEE00551F8F /* YKRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKRemoteViewController.h; sourceTree = "<group>"; };
+		3FA2D8821E305BEE00551F8F /* YKRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKRemoteViewController.m; sourceTree = "<group>"; };
+		3FEC71041F0357D10018F46C /* YKRemoteACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKRemoteACViewController.h; sourceTree = "<group>"; };
+		3FEC71051F0357D10018F46C /* YKRemoteACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKRemoteACViewController.m; sourceTree = "<group>"; };
+		496F3FBD45EAA063D624E25F /* Pods-YKCenterSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKCenterSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YKCenterSwift/Pods-YKCenterSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		82CA84139D7540B1C6B70569 /* Pods_YKSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		869C7936EA2D1ED22FC85314 /* Pods_YKCenterDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKCenterDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		953D650F0BE54DF95127B38B /* Pods-YKCenterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKCenterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YKCenterDemo/Pods-YKCenterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C27E20758E35C3EA31589872 /* Pods-YKCenterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKCenterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YKCenterDemo/Pods-YKCenterDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C9F73659886A02EA84FFEB71 /* Pods_YKCenterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKCenterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42A381C206AC2270A0221F1 /* Pods_YKCenterDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKCenterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E1701120F8A4DC0052B218 /* YKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKCommon.h; sourceTree = "<group>"; };
+		F6E1701220F8A4DD0052B218 /* YKCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKCommon.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F5A21A51E27666F006BF365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15DEC977D9EBCD73ABA3CBE7 /* Pods_YKSDKDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F5A219F1E27666F006BF365 = {
+			isa = PBXGroup;
+			children = (
+				3F5A21AA1E27666F006BF365 /* YKSDKDemo */,
+				3F5A21A91E27666F006BF365 /* Products */,
+				546035220651E5D1C9DA8CEB /* Pods */,
+				ACF749D161E65BEC47C3B512 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F5A21A91E27666F006BF365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A21A81E27666F006BF365 /* YKSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F5A21AA1E27666F006BF365 /* YKSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3FA2D81A1E2DE99C00551F8F /* Remote */,
+				3F5A21AE1E27666F006BF365 /* AppDelegate.h */,
+				3F5A21AF1E27666F006BF365 /* AppDelegate.m */,
+				F6E1701120F8A4DC0052B218 /* YKCommon.h */,
+				F6E1701220F8A4DD0052B218 /* YKCommon.m */,
+				3F5A21F31E277483006BF365 /* YKDeviceListCell.h */,
+				3F5A21F41E277483006BF365 /* YKDeviceListCell.m */,
+				3F5A21F51E277483006BF365 /* YKDeviceListCell.xib */,
+				3F5A21B41E27666F006BF365 /* Main.storyboard */,
+				3FA2D87E1E2F71AD00551F8F /* YKRemoteTableViewController.h */,
+				3FA2D87F1E2F71AD00551F8F /* YKRemoteTableViewController.m */,
+				3FA2D8811E305BEE00551F8F /* YKRemoteViewController.h */,
+				3FA2D8821E305BEE00551F8F /* YKRemoteViewController.m */,
+				3FEC71041F0357D10018F46C /* YKRemoteACViewController.h */,
+				3FEC71051F0357D10018F46C /* YKRemoteACViewController.m */,
+				3F5A21B71E27666F006BF365 /* Assets.xcassets */,
+				3F5A21B91E27666F006BF365 /* LaunchScreen.storyboard */,
+				3F5A21BC1E27666F006BF365 /* Info.plist */,
+				3F5A21AB1E27666F006BF365 /* Supporting Files */,
+				3F1383001F5577BB00D5FD0A /* Localizable.strings */,
+			);
+			path = YKSDKDemo;
+			sourceTree = "<group>";
+		};
+		3F5A21AB1E27666F006BF365 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A21AC1E27666F006BF365 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FA2D81A1E2DE99C00551F8F /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				3FA2D81B1E2DEA7500551F8F /* Remote.storyboard */,
+				3FA2D81D1E2DF96D00551F8F /* YKDeviceTypeViewController.h */,
+				3FA2D81E1E2DF96D00551F8F /* YKDeviceTypeViewController.m */,
+				3FA2D8241E2E0DE900551F8F /* YKBrandTableViewController.h */,
+				3FA2D8251E2E0DE900551F8F /* YKBrandTableViewController.m */,
+				3FA2D82E1E2E184100551F8F /* YKMatchDeviceTableViewController.h */,
+				3FA2D82F1E2E184100551F8F /* YKMatchDeviceTableViewController.m */,
+				3FA2D8311E2E186400551F8F /* YKMatchKeyTableViewController.h */,
+				3FA2D8321E2E186400551F8F /* YKMatchKeyTableViewController.m */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		546035220651E5D1C9DA8CEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				953D650F0BE54DF95127B38B /* Pods-YKCenterDemo.debug.xcconfig */,
+				C27E20758E35C3EA31589872 /* Pods-YKCenterDemo.release.xcconfig */,
+				496F3FBD45EAA063D624E25F /* Pods-YKCenterSwift.debug.xcconfig */,
+				355C6262D1154727EB7321AF /* Pods-YKCenterSwift.release.xcconfig */,
+				351D579B1E534A037D02F0B0 /* Pods-YKSDKDemo.debug.xcconfig */,
+				121B6EA2639C9907077006A2 /* Pods-YKSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ACF749D161E65BEC47C3B512 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D42A381C206AC2270A0221F1 /* Pods_YKCenterDemo.framework */,
+				869C7936EA2D1ED22FC85314 /* Pods_YKCenterDemoTests.framework */,
+				14EE1DA3AE4F1B5ABB9A8CAA /* Pods_YKCenterDemoUITests.framework */,
+				C9F73659886A02EA84FFEB71 /* Pods_YKCenterSwift.framework */,
+				82CA84139D7540B1C6B70569 /* Pods_YKSDKDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F5A21A71E27666F006BF365 /* YKSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5A21D51E27666F006BF365 /* Build configuration list for PBXNativeTarget "YKSDKDemo" */;
+			buildPhases = (
+				C2AAF2853A8FE4901582AEC4 /* [CP] Check Pods Manifest.lock */,
+				3F5A21A41E27666F006BF365 /* Sources */,
+				3F5A21A51E27666F006BF365 /* Frameworks */,
+				3F5A21A61E27666F006BF365 /* Resources */,
+				A6B6DBB5827EBA40C9BA027B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YKSDKDemo;
+			productName = YKCenterDemo;
+			productReference = 3F5A21A81E27666F006BF365 /* YKSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F5A21A01E27666F006BF365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YK;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shenzhen Yaokan Technology Co., Ltd.";
+				TargetAttributes = {
+					3F5A21A71E27666F006BF365 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HY8S4564M8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3F5A21A31E27666F006BF365 /* Build configuration list for PBXProject "YKSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3F5A219F1E27666F006BF365;
+			productRefGroup = 3F5A21A91E27666F006BF365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F5A21A71E27666F006BF365 /* YKSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F5A21A61E27666F006BF365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA2D81C1E2DEA7500551F8F /* Remote.storyboard in Resources */,
+				3F5A21BB1E27666F006BF365 /* LaunchScreen.storyboard in Resources */,
+				3F1382FE1F5577BB00D5FD0A /* Localizable.strings in Resources */,
+				3F5A21F71E277483006BF365 /* YKDeviceListCell.xib in Resources */,
+				3F5A21B81E27666F006BF365 /* Assets.xcassets in Resources */,
+				3F5A21B61E27666F006BF365 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6B6DBB5827EBA40C9BA027B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YKSDKDemo/Pods-YKSDKDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${PODS_ROOT}/../YKSDK/YKSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YKSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YKSDKDemo/Pods-YKSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2AAF2853A8FE4901582AEC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YKSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F5A21A41E27666F006BF365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA2D8801E2F71AD00551F8F /* YKRemoteTableViewController.m in Sources */,
+				3FA2D8301E2E184100551F8F /* YKMatchDeviceTableViewController.m in Sources */,
+				3FEC71061F0357D10018F46C /* YKRemoteACViewController.m in Sources */,
+				3F5A21F61E277483006BF365 /* YKDeviceListCell.m in Sources */,
+				3FA2D8831E305BEE00551F8F /* YKRemoteViewController.m in Sources */,
+				3FA2D81F1E2DF96D00551F8F /* YKDeviceTypeViewController.m in Sources */,
+				3F5A21B01E27666F006BF365 /* AppDelegate.m in Sources */,
+				3FA2D8261E2E0DE900551F8F /* YKBrandTableViewController.m in Sources */,
+				3F5A21AD1E27666F006BF365 /* main.m in Sources */,
+				F6E1701320F8A4DD0052B218 /* YKCommon.m in Sources */,
+				3FA2D8331E2E186400551F8F /* YKMatchKeyTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F1383001F5577BB00D5FD0A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1382FF1F5577BB00D5FD0A /* zh-Hans */,
+				3F1383011F5577F000D5FD0A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3F5A21B41E27666F006BF365 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5A21B51E27666F006BF365 /* Base */,
+				3F1382F41F55775F00D5FD0A /* en */,
+				3F1382F81F55776500D5FD0A /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F5A21B91E27666F006BF365 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5A21BA1E27666F006BF365 /* Base */,
+				3F1382F51F55776000D5FD0A /* en */,
+				3F1382F91F55776500D5FD0A /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F5A21D31E27666F006BF365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F5A21D41E27666F006BF365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F5A21D61E27666F006BF365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 351D579B1E534A037D02F0B0 /* Pods-YKSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HY8S4564M8;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/YKSDKDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yaokantv.YKSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3F5A21D71E27666F006BF365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 121B6EA2639C9907077006A2 /* Pods-YKSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HY8S4564M8;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/YKSDKDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yaokantv.YKSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F5A21A31E27666F006BF365 /* Build configuration list for PBXProject "YKSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5A21D31E27666F006BF365 /* Debug */,
+				3F5A21D41E27666F006BF365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F5A21D51E27666F006BF365 /* Build configuration list for PBXNativeTarget "YKSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5A21D61E27666F006BF365 /* Debug */,
+				3F5A21D71E27666F006BF365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F5A21A01E27666F006BF365 /* Project object */;
+}
