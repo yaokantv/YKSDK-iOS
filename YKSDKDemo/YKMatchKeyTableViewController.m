@@ -58,7 +58,10 @@
                                  completion:^(YKRemoteDevice * _Nonnull remote, NSError * _Nonnull error)
      {
          if (error == nil) {
-             [weakSelf.navigationController dismissViewControllerAnimated:YES completion:nil];
+             [weakSelf.navigationController.presentingViewController
+              dismissViewControllerAnimated:YES completion:nil];
+         } else {
+             NSLog(@"%s error:%@", __PRETTY_FUNCTION__, error.localizedDescription);
          }
      }];
 }

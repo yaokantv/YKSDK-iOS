@@ -86,6 +86,23 @@ FOUNDATION_EXPORT const unsigned char YKCenterSDKVersionString[];
                         completion:(void (^__nullable)(YKRemoteDevice *remote, NSError *error))completion;
 
 /**
+ 一键匹配新接口
+ 
+ @param ykcid 遥控中心 id
+ @param type 遥控器设备类型
+ @param brandId 品牌 id
+ @param key 键名
+ @param cmd 键值
+ @param completion 结果回调
+ */
++ (void)oneKeyMatchWithYKCId:(NSString *)ykcid
+                beRemoteType:(NSUInteger)type
+                     brandId:(NSUInteger)brandId
+                     cmd_key:(NSString *)key
+                   cmd_value:(NSString *)cmd
+                  completion:(void (^__nullable)(id result, NSError *error))completion;
+
+/**
  获取 SDK 版本号
 
  @return SDK 版本号

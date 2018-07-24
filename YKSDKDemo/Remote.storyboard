@@ -139,7 +139,13 @@
                             <outlet property="delegate" destination="CKu-xr-ihx" id="wpZ-Cj-wVC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="匹配遥控" id="ljm-dR-3JO"/>
+                    <navigationItem key="navigationItem" title="匹配遥控" id="ljm-dR-3JO">
+                        <barButtonItem key="rightBarButtonItem" title="一键匹配" id="YKu-Ds-hlu">
+                            <connections>
+                                <segue destination="fQM-16-QgL" kind="show" identifier="YKOneKeyMatchViewController" id="jFl-Mw-Owp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="QZB-gE-XaX" kind="show" identifier="YKAllMatchTableViewController" id="Qjm-Y0-mDA"/>
                     </connections>
@@ -151,7 +157,7 @@
         <!--匹配按键-->
         <scene sceneID="6y9-DE-TDW">
             <objects>
-                <tableViewController id="wQc-Cd-6ud" customClass="YKMatchKeyTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="YKMatchKeyTableViewController" id="wQc-Cd-6ud" customClass="YKMatchKeyTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="o3W-bC-IEi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +203,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlq-Oa-17L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3777" y="-170"/>
+            <point key="canvasLocation" x="3700" y="-115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dI5-BU-SkV">
@@ -267,6 +273,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zC-m2-QyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3777" y="601"/>
+        </scene>
+        <!--一键匹配-->
+        <scene sceneID="p9K-cv-tyg">
+            <objects>
+                <tableViewController id="fQM-16-QgL" customClass="YKOneKeyMatchViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SFt-de-aE1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OneKeyMatchCellIdentifier" textLabel="PJ5-Xf-ipT" detailTextLabel="50o-Tj-fk0" style="IBUITableViewCellStyleSubtitle" id="PVV-JS-o7Q">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PVV-JS-o7Q" id="QUd-G9-ZQ3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PJ5-Xf-ipT">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="50o-Tj-fk0">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fQM-16-QgL" id="AY2-iQ-7eo"/>
+                            <outlet property="delegate" destination="fQM-16-QgL" id="tEH-Ln-8NH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="一键匹配" id="pIn-Ga-mNk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="8hy-SV-Gqi">
+                            <connections>
+                                <action selector="retryAction:" destination="fQM-16-QgL" id="vXn-Io-3BW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9T-CB-xiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3700" y="-890"/>
         </scene>
     </scenes>
 </document>

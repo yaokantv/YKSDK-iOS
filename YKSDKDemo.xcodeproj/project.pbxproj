@@ -24,6 +24,7 @@
 		3FA2D8801E2F71AD00551F8F /* YKRemoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D87F1E2F71AD00551F8F /* YKRemoteTableViewController.m */; };
 		3FA2D8831E305BEE00551F8F /* YKRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2D8821E305BEE00551F8F /* YKRemoteViewController.m */; };
 		3FEC71061F0357D10018F46C /* YKRemoteACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC71051F0357D10018F46C /* YKRemoteACViewController.m */; };
+		F6B97ECB2107040E00081AEF /* YKOneKeyMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B97EC82107040E00081AEF /* YKOneKeyMatchViewController.m */; };
 		F6E1701320F8A4DD0052B218 /* YKCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E1701220F8A4DD0052B218 /* YKCommon.m */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		C27E20758E35C3EA31589872 /* Pods-YKCenterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKCenterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YKCenterDemo/Pods-YKCenterDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C9F73659886A02EA84FFEB71 /* Pods_YKCenterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKCenterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42A381C206AC2270A0221F1 /* Pods_YKCenterDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKCenterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B97EC82107040E00081AEF /* YKOneKeyMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKOneKeyMatchViewController.m; sourceTree = "<group>"; };
+		F6B97EC92107040E00081AEF /* YKOneKeyMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKOneKeyMatchViewController.h; sourceTree = "<group>"; };
 		F6E1701120F8A4DC0052B218 /* YKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKCommon.h; sourceTree = "<group>"; };
 		F6E1701220F8A4DD0052B218 /* YKCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKCommon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +155,8 @@
 				3FA2D82F1E2E184100551F8F /* YKMatchDeviceTableViewController.m */,
 				3FA2D8311E2E186400551F8F /* YKMatchKeyTableViewController.h */,
 				3FA2D8321E2E186400551F8F /* YKMatchKeyTableViewController.m */,
+				F6B97EC92107040E00081AEF /* YKOneKeyMatchViewController.h */,
+				F6B97EC82107040E00081AEF /* YKOneKeyMatchViewController.m */,
 			);
 			name = Remote;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				3F5A21F61E277483006BF365 /* YKDeviceListCell.m in Sources */,
 				3FA2D8831E305BEE00551F8F /* YKRemoteViewController.m in Sources */,
 				3FA2D81F1E2DF96D00551F8F /* YKDeviceTypeViewController.m in Sources */,
+				F6B97ECB2107040E00081AEF /* YKOneKeyMatchViewController.m in Sources */,
 				3F5A21B01E27666F006BF365 /* AppDelegate.m in Sources */,
 				3FA2D8261E2E0DE900551F8F /* YKBrandTableViewController.m in Sources */,
 				3F5A21AD1E27666F006BF365 /* main.m in Sources */,
