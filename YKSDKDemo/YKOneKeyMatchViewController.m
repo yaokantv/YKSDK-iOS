@@ -12,7 +12,7 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "YKMatchKeyTableViewController.h"
 
-// 测试演示数据：康佳电视机
+// 测试演示数据：康佳电视机，真实数据请使用SDK返回的
 static NSString * const TV_TID = @"2";   // 设备类型
 static NSString * const TV_BID = @"426"; // 设备品牌
 // 康佳电视机电源键
@@ -198,11 +198,9 @@ static NSString * const TV_SIGNAL_CODE = @"GI+tAUXYamhCzXBINv7VFMMPNIHrPVnS+WaQW
 
 - (void)showTestView:(NSArray <YKRemoteMatchDevice *> *)devices {
     if (devices.count == 1) {
-//        [self performSegueWithIdentifier:@"showTestSegue" sender:devices.firstObject];
         [self showMatchKeyTableViewController:devices.firstObject];
     }
     else if (devices.count > 1) {
-//        [self performSegueWithIdentifier:@"showMatchRemoteList" sender:devices];
         self.devices = devices;
         [self.tableView reloadData];
     }
