@@ -1,6 +1,5 @@
 # coding: utf-8
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://git.oschina.net/dantang/PodSpecs.git'
 
 # Uncomment this line to define a global platform for your project
 platform :ios, '8.2'
