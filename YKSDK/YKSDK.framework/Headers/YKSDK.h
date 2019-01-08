@@ -102,6 +102,18 @@ FOUNDATION_EXPORT const unsigned char YKCenterSDKVersionString[];
                    cmd_value:(NSString *)cmd
                   completion:(void (^__nullable)(id result, NSError *error))completion;
 
+
+/**
+ 遥控器详情
+
+ @param ykcId 遥控中心 id
+ @param rid 遥控器 id
+ @param completion 结果回调
+ */
++ (void)fetchRemoteDetailWithYKCId:(NSString *)ykcId
+                               rid:(NSString *)rid
+                        completion:(void (^__nullable)(id result, NSError *error))completion;
+
 /**
  获取 SDK 版本号
 

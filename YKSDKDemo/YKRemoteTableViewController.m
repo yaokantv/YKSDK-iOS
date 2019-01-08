@@ -111,6 +111,7 @@
 
 -(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
     YKRemoteDevice *device = self.remotes[indexPath.row];
+    NSLog(@"json :%@",[device toJsonObject]);
     UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"请输入名称"
                                                                 message:@""
                                                          preferredStyle:(UIAlertControllerStyleAlert)];
