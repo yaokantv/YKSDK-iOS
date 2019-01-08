@@ -22,7 +22,7 @@ static NSString *const YK_APP_ID = @"";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [YKSDK disableSDKLog:NO];
+    [YKSDK disableSDKLog:YES];
     
     // 可以放到APP里面任何一个地方初始化，根据你们需求而定
     [YKSDK registApp:YK_APP_ID completion:^(NSError * _Nonnull error) {
