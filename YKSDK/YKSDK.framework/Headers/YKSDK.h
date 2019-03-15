@@ -30,16 +30,6 @@ FOUNDATION_EXPORT const unsigned char YKCenterSDKVersionString[];
 
 
 /**
- 注册并初始化 SDK，有注册结果回调方法。
- 
- 注意：此接口调用成功后，其他接口的功能才可以正常使用。
- 
- @param appId 应用 ID 是在遥看开发者中心注册。
- @param completion 注册成功回调。
- */
-+ (void)registApp:(NSString *)appId completion:(void (^ __nullable)(NSError *error))completion;
-
-/**
  获取遥控码的设备类型
 
  @param ykcId       遥控中心 id

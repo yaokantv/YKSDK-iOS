@@ -50,6 +50,7 @@
     // Configure the cell...
     YKRemoteDeviceBrand *brand = self.brandList[indexPath.row];
     cell.textLabel.text = brand.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", brand.common == 1 ? @"常用品牌" : @""];
     return cell;
 }
 

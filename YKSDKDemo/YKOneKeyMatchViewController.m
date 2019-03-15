@@ -96,12 +96,12 @@ static NSString * const TV_SIGNAL_CODE = @"GI+tAUXYamhCzXBINv7VFMMPNIHrPVnS+WaQW
 }
 
 - (IBAction)retryAction:(id)sender {
-    NSString *ykcId = [[YKCommon sharedInstance] currentYKCId];
-    __weak __typeof(self)weakSelf = self;
-    
     NSString *message = [NSString stringWithFormat:@"开始匹配，请发送%@", self.matchKey];
     [self showAlert:message isLoading:YES];
-    // 以下功能自己实现，注释仅参考
+    
+    // TODO: 以下功能自己实现，注释仅参考
+//    NSString *ykcId = [[YKCommon sharedInstance] currentYKCId];
+//    __weak __typeof(self)weakSelf = self;
 //    [YKSDK learnCodeWithYKCId:ykcId completion:^(BOOL result, NSString * _Nullable code) {
 //        NSLog(@"code = %@", code);
 //
@@ -114,6 +114,7 @@ static NSString * const TV_SIGNAL_CODE = @"GI+tAUXYamhCzXBINv7VFMMPNIHrPVnS+WaQW
 //    }];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self showAlert:@"正在匹配" isLoading:YES];
+        // 这里Demo用的是TV的匹配按键，实际使用要改成相对应的匹配按键，遥控器和键名请参考：https://github.com/yaokantv/YKCenterSDKExample_for_AS/wiki/
         if ([self.matchKey isEqualToString:@"power"]) {
             [self requestOnekeyMatchWith:TV_POWER_CODE];
         }
