@@ -39,6 +39,7 @@ FOUNDATION_EXPORT const unsigned char YKCenterSDKVersionString[];
  */
 + (void)registApp:(NSString *)appId completion:(void (^ __nullable)(NSError *error))completion;
 
+
 /**
  获取遥控码的设备类型
 
