@@ -279,7 +279,13 @@
                             <outlet property="delegate" destination="tmI-u5-KSi" id="u4l-eq-s0X"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="遥控器" id="z9x-BZ-vVi"/>
+                    <navigationItem key="navigationItem" title="遥控器" id="z9x-BZ-vVi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="ayn-TN-zQ6">
+                            <connections>
+                                <action selector="showActions:" destination="tmI-u5-KSi" id="YdB-dy-lqU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5nA-bY-wt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
