@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (YKRemoteDevice *)newModel;
 + (YKRemoteDevice *)newMemoryModel;
-- (NSString *)toJsonObject;
+- (NSDictionary *)toJsonObject;
 
 @end
 
