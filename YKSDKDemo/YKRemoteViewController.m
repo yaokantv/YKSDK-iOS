@@ -41,4 +41,51 @@
     NSLog(@"%@ = %@, zip=%d", key.name, key.src, key.zip);
 }
 
+- (IBAction)showActions:(id)sender {
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"请选择"
+                                                                message:nil
+                                                         preferredStyle:(UIAlertControllerStyleActionSheet)];
+    
+    __weak __typeof(self)weakSelf = self;
+    UIAlertAction *exportJson = [UIAlertAction actionWithTitle:@"导出json"
+                                                         style:(UIAlertActionStyleDefault)
+                                                       handler:^(UIAlertAction * _Nonnull action)
+                                 {
+                                     __weak __typeof(weakSelf)strongSelf = weakSelf;
+                                     NSDictionary *dict = [strongSelf.remote toJsonObject];
+                                     [strongSelf showJson:dict];
+                                 }];
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消"
+                                                     style:(UIAlertActionStyleCancel)
+                                                   handler:nil];
+    [ac addAction:exportJson];
+    [ac addAction:cancel];
+    
+    [self presentViewController:ac animated:YES completion:nil];
+}
+
+- (void)showJson:(NSDictionary *)dict{
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"Json"
+                                                                message:dict.description
+                                                         preferredStyle:(UIAlertControllerStyleAlert)];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"关闭"
+                                                     style:(UIAlertActionStyleCancel)
+                                                   handler:nil];
+    
+    UIAlertAction *import = [UIAlertAction actionWithTitle:@"导入"
+                                                     style:(UIAlertActionStyleDefault)
+                                                   handler:^(UIAlertAction * _Nonnull action)
+                             {
+                                 
+                                 [YKRemoteDevice saveRemoteDeviceWithDictionary:dict];
+                                 
+                             }];
+    
+    [ac addAction:cancel];
+    [ac addAction:import];
+    [self presentViewController:ac animated:YES completion:nil];
+}
+
+
 @end
