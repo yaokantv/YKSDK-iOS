@@ -174,13 +174,12 @@
  获取当前的遥控码对象 key 后，发码逻辑请自己实现
  */
 - (void)remoteControl {
-//    YKRemoteDeviceKey *key = [YKRemoteDeviceKey remoteDeviceKeyIn:self.remote
-//                                                         withMode:self.currentModel
-//                                                             temp:self.temperature
-//                                                            speed:self.currentSpeed
-//                                                            windU:self.currentWindU
-//                                                            windL:self.currentWindL
-//                                                    asteriskDatas:self.asteriskDatas];
+    YKRemoteDeviceKey *key = [YKRemoteDeviceKey remoteDeviceKeyIn:self.remote
+                                                         withMode:self.currentModel
+                                                             temp:self.temperature
+                                                            speed:self.currentSpeed
+                                                            windU:self.currentWindU
+                                                            windL:self.currentWindL];
 }
 
 - (void)updateStatusView {
